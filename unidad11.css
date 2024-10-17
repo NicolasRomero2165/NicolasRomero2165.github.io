@@ -1,0 +1,763 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #070707;
+    color: #b95c06;
+    background-image: url('imagenes/fondo.jpeg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    backdrop-filter: blur(2px);
+}
+
+p {
+    text-indent: 20px;
+}
+
+input{
+    margin-bottom: 23px;
+}
+
+.color_fondo{
+    background-color: #242424;
+}
+
+.color_fondo_imagen{
+    background-color: #070707;
+    color:#b95c06;
+    border-color:#4e4c4c;
+}
+
+#contenedor {
+    width: 1200px;
+    height: auto;
+    background-color: #4e4c4c;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header, section, footer {
+    width: 100%;
+}
+
+header {
+    background: radial-gradient(#242424 10%,#4e4c4c);
+    height: 100px;
+    position: sticky;
+    top: 0;
+    border-radius: 0px;
+    z-index: 1000;
+}
+
+#nombre{
+    width: 510px;
+    height: 90px;
+    margin: 5px 175px;
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 60px;
+    color:#b95c06;
+    text-shadow: 4px 0px #ffffff, 0px 4px #ffffff, -4px 0px #ffffff, 0px -4px #ffffff;
+    transform: translate(0px, 0px) skew(-16deg, 0deg);
+}
+
+#boton1_top{
+    width: 160px;
+    height: 90px;
+    margin: 5px;
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    padding: 31px 0px;
+    font-size: 25px;
+    border-radius: 15px;
+}
+
+#boton1_top a{
+    display: inline-block;
+    text-decoration: none;
+    color:#b95c06;
+}
+
+#menu{
+    width: 160px;
+    height: 90px;
+    padding: 31px 0px;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 5px;
+    float: left;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    z-index: 2;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#doomold_boton:hover{
+    animation: bordes 800ms infinite linear;
+}
+
+#sec_new_boton:hover{
+    animation: bordes 800ms infinite linear;
+}
+
+#doom3_boton:hover{
+    animation: bordes 800ms infinite linear;
+}
+
+#doomnew_boton:hover{
+    animation: bordes 800ms infinite linear;
+}
+
+@keyframes bordes {
+    from {
+      border: 2px solid #5f0707;
+    }
+  
+    to {
+      border: 2px solid #f10505;
+    }
+  }
+
+#boton2_top{
+    width: 160px;
+    height: 0px;
+    background-color: #131313;
+    margin-top: 21px;
+    font-size: 16px;
+    position: sticky;
+    cursor: pointer;    
+    overflow: hidden;
+}
+
+#menu:hover #boton2_top{
+    visibility: visible;
+    height: 124px;
+    transition: 0.5s;
+}
+
+#boton2_top ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    box-sizing: border-box;    
+    text-align: center;    
+    line-height: 30px;
+}
+
+#boton2_top ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color:#ffffff;
+}
+
+#sec1 {
+    height: 850px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#caja1_sec1{
+    width: 330px;
+    height: 300px;
+    margin: 5px;
+    float: left;
+    overflow: hidden;
+}
+
+#caja2_sec1{
+    background-image: url(imagenes/doom_1993.gif);
+    background-size: cover;
+    background-position: center;
+    width: 510px;
+    height: 300px;
+    margin: 5px;
+    float: left;
+    overflow: hidden;
+    background-color: #302e2e;
+}
+
+#doom2_gif{
+    width: 510px;
+    height: 300px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    animation: puerta;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    z-index: 1;
+    top: -94%;
+}
+
+@keyframes puerta{
+    from {
+        top:-94%;
+    }
+
+    to {
+        top: -194%;
+    }
+}
+
+@keyframes puerta2{
+    from {
+        top: -65%
+    }
+
+    to {
+        top: -165%
+    }
+}
+
+#datos{
+    display:block;
+    font-size: 25px;
+    color:#f11818;
+    text-shadow: 2px 0px #050000, 0px 2px #050000, -2px 0px #050000, 0px -2px #050000;
+}
+
+#rechazo{
+    text-align: center;
+    font-size: 40px;
+    color:#f11818;
+    text-shadow: 2px 0px #050000, 0px 2px #050000, -2px 0px #050000, 0px -2px #050000;
+}
+
+#caja3_sec1{
+    width: 330px;
+    height: 300px;
+    margin: 5px;
+    float: right;
+}
+
+#caja4_sec1{
+    width: 1190px;
+    height: auto;
+    margin: 5px;
+    clear: left;
+    text-align: justify;
+}
+
+#sec_new{
+    height: auto;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.margin_bottom{
+    margin-bottom: 5px;
+}
+
+.texto_justificado{
+    text-align: justify;
+}
+
+#doom64_img{
+    height: 100%;
+    width: 100%;
+}
+
+#espacio {
+    height: 5px;
+}
+
+.card{
+    border-color: #4e4c4c;
+}
+
+#sec2 {
+    height: 945px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+#caja1_sec2{
+    width: 790px;
+    height: 945px;
+    margin: 5px;
+    float: left;
+    text-align: justify;
+    overflow: hidden;
+}
+
+#caja2_sec2{
+    width: 390px;
+    height: 390px;
+    margin: 55px 5px;
+    float: right;
+}
+
+#caja3_sec2{
+    width: 390px;
+    height: 390px;
+    margin: 5px;
+    float: right;
+    overflow: hidden;
+}
+
+#doom3_gif{
+    height: 100%;
+    margin-left: -160px;
+    display: block;
+}
+
+#sec3 {
+    float: left;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.boton_sus{
+    background-color: #b95c06;
+    color: #ffffff;
+}
+
+.boton_sus:hover{
+    background-color: #5f0707;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #e7f1ff;
+    background-color: #b95c06;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+}
+
+.accordion-item {
+    background-color: #4e4c4c;
+}
+
+#caja1_sec3{
+    width: 1190px;
+    height: auto;
+    margin: 5px;
+    float: left;
+    text-align: justify;
+}
+
+#caja2_sec3{
+    width: 590px;
+    height: 190px;
+    margin: 5px;
+    float: left;
+}
+
+#caja3_sec3{
+    width: 590px;
+    height: 190px;
+    margin: 5px;
+    float: left;
+    overflow: hidden;
+}
+
+#doom2016_gif{
+    width: 100%;
+    position: relative;
+    top: -100px;
+}
+
+footer {
+    height: 50px;
+    clear: both;
+}
+
+#boton_bottom{
+    width: 700px;
+    margin: 16px 250px;
+    background-color: #070707;
+    float: left;
+    text-align: center;
+    top: 0px;
+}
+
+#boton_bottom a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0px 92px;
+    color:#4e4c4c;
+}
+
+/** ----------------------------------------------------- MEDIA mayor a 600px ------------------------------------------------------------**/
+
+@media all and (min-width: 600px) and (max-width: 1023px){
+
+body{
+    background-repeat: repeat;
+}
+
+#contenedor {
+    width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+
+header{
+    height: 50px;
+}
+
+#nombre{
+width: 200px;
+height: 30px;
+margin: 5px 20px;
+font-size: 30px;
+text-shadow: 2px 0px #ffffff, 0px 2px #ffffff, -2px 0px #ffffff, 0px -2px #ffffff;
+}
+
+#boton1_top{
+    width: 160px;
+    height: 40px;
+    margin: 5px;
+    padding: 5px 0px;
+}
+
+#menu{
+    height: 40px;
+    padding: 5px 0px;
+    margin: 5px;
+    font-size: 25px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#boton2_top{
+    margin-top: -4px;
+}
+
+#sec1 {
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#caja1_sec1{
+    width: 280px;
+    height: 254px;
+    margin: 5px;
+    float: left;
+    overflow: hidden;
+}
+
+#doom1_img{
+    width: 100%;
+}
+
+#caja2_sec1{
+    width:570px;
+    height:300px;
+    clear:both;
+}
+
+#doom2_gif{
+    display:none;
+}
+
+#caja3_sec1{
+    width: 280px;
+    height: 254px;
+    margin: 5px;
+    float:right;
+}
+
+#doom2_img{
+    width: 100%;
+}
+
+#caja4_sec1{
+    width: 570px;
+    height: auto;
+    margin: 5px;
+    clear: left;
+    text-align: justify;
+}
+
+.titulo{
+    text-align: center;
+}
+
+#sec2 {
+    height: auto;
+    float:left;
+    width: 580px;
+    margin-bottom: 10px;
+}
+
+#caja1_sec2{
+    width: 570px;
+    height: auto;
+    margin: 5px;
+    float: left;
+    text-align: justify;
+}
+
+#caja2_sec2{
+    width: 270px;
+    height: 270px;
+    margin: 5px;
+    float: left;
+    overflow: hidden;
+}
+
+#doom3_portada{
+    width: 100%;
+}
+
+#caja3_sec2{
+    width: 270px;
+    height: 270px;
+    margin: 5px;
+    float: right;
+    overflow: hidden;
+}
+
+#doom3_gif{
+    height: 100%;
+    margin-left: -130px;
+    display: block;
+}
+
+#sec3 {
+    height: auto;
+    margin-bottom: 10px;
+    float: left;
+}
+
+#caja1_sec3{
+    width: 570px;
+    height: auto;
+    margin: 5px;
+    float: left;
+    text-align: justify;
+}
+
+#caja2_sec3{
+    width: 570px;
+    height: 180px;
+    margin: 5px;
+    float: left;
+}
+
+#doom2016_portada{
+    width: 100%;
+}
+
+#caja3_sec3{
+    width: 570px;
+    height: 180px;
+    margin: 5px;
+    float: left;
+    overflow: hidden;
+}
+
+#doom2016_gif{
+    width: 100%;
+    top: -100px;
+}
+
+footer {
+    height: 30px;
+}
+
+#boton_bottom{
+    width: 500px;
+    margin: 5px 40px;
+    background-color: #070707;
+    float: left;
+    text-align: center;
+    top: 0px;
+}
+
+#boton_bottom a{
+    margin: 0px 55px;
+}
+}
+
+/*------------------------------------------------------ MEDIA menos 600 px -----------------------------------------------------------------*/
+
+@media all and (max-width: 599px){
+    #contenedor {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        float: left;
+    }
+
+    header{
+        height: auto;
+        width: 100%;
+        float: left;
+    }
+
+    #nombre{
+    width: 90%;
+    height: auto;
+    margin: 5%;
+    font-size: 30px;
+    text-shadow: 2px 0px #ffffff, 0px 2px #ffffff, -2px 0px #ffffff, 0px -2px #ffffff;
+}
+
+#boton1_top{
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    padding: 5px 0px;
+}
+
+#menu{
+    height: auto;
+    padding: 5px 0px;
+    margin-left: 5%;
+    font-size: 25px;
+    border-radius: 15px 15px 0px 0px;
+    width: 90%;
+}
+
+#boton2_top{
+    width: 100%;
+    margin-top: 2px;
+}
+
+#sec1 {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+#caja1_sec1{
+    width: 45%;
+    height: 30%;
+    margin: 5px;
+    float: left;
+    overflow: hidden;
+}
+
+#doom1_img{
+    width: 100%;
+}
+
+#caja2_sec1{
+    width:96.5%;
+    height:300px;
+    clear:both;
+}
+
+.datos{
+    font-size: 26px;
+}
+
+#doom2_gif{
+    display: none;
+}
+
+#caja3_sec1{
+    width: 45%;
+    height: 30%;
+    margin: 5px;
+    float:right;
+}
+
+#doom2_img{
+    width: 100%;
+}
+
+#caja4_sec1{
+    width: 96.5%;
+    height: auto;
+    margin: 5px;
+    clear: left;
+    text-align: justify;
+}
+
+#sec2 {
+    height: auto;
+    width: 100%;
+    margin-bottom: 10px;
+    float: left;
+}
+
+#caja1_sec2{
+    width: 96.5%;
+    height: auto;
+    margin: 5px;
+    float: left;
+    text-align: justify;
+}
+
+#caja2_sec2{
+    width: 96.5%;
+    height: auto;
+    margin: 5px;
+    float: left;
+    overflow: hidden;
+}
+
+#doom3_portada{
+    width: 100%;
+}
+
+#caja3_sec2{
+    display: none;
+}
+
+#doom3_gif{
+   display: none;
+}
+
+#sec3 {
+    height: auto;
+    width: 100%;
+    margin-bottom: 10px;
+    float: left;
+}
+
+#caja1_sec3{
+    width: 96.5%;
+    height: auto;
+    margin: 5px;
+    float: left;
+    text-align: justify;
+}
+
+#caja2_sec3{
+    width: 96.5%;
+    height: auto;
+    margin: 5px;
+    float: left;
+}
+
+#doom2016_portada{
+    width: 100%;
+}
+
+#caja3_sec3{
+    width: 96.5%;
+    height: auto;
+    margin: 5px;
+    float: left;
+    overflow: hidden;
+}
+
+#doom2016_gif{
+    height: 100%;
+    top: auto;
+}
+
+footer {
+    height: 30px;
+}
+
+#boton_bottom{
+    width: 96.5%;
+    margin: 5px 5px;
+    background-color: #070707;
+    float: left;
+    text-align: center;
+}
+
+#boton_bottom a{
+    margin: 0px 10px;
+}
+}
