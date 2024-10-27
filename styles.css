@@ -161,7 +161,7 @@ header {
 }
 
 #sec1 {
-    height: 850px;
+    height: auto;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -267,7 +267,7 @@ header {
 }
 
 #sec2 {
-    height: 945px;
+    height: 900px;
     margin-bottom: 10px;
     float: left;
 }
