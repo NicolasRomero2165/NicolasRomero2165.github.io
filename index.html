@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="bootstrap.min.css" rel="StyleSheet">
-    <link href="unidad11.css" rel="StyleSheet">
+    <link href="styles.css" rel="StyleSheet">
     <link rel="icon" type="image/x-icon" href="imagenes/cacodemon.png">
-    <script src="cuestionario.js" type="text/javascript"></script>
     <title>JuegoTeca</title>
 </head>
 <body>
@@ -33,15 +35,6 @@
                 <img id="doom2_img" src="imagenes/doom2.jpg" alt="Doom II (1994) de ID Software" title="Doom II (1994)">
             </div>
             <div id="caja2_sec1" class="color_fondo_imagen" >
-                <span id="datos">
-                <script type="text/javascript">
-                    document.write("<h2 class='datos'>" + nombre + " " + apellido + "</h2>")
-                    document.write("<p class='datos'>" + sexo + "</p>")
-                    document.write("<p class='datos'>" + "Edad: " + edad + "</p>")
-                    document.write("<p class='datos'>" + "Especialidad: " + arma + "</p>")
-                </script>
-                </span>
-                <p id="rechazo">No podemos aceptar a un Marine menor de edad.</p>
                 <img id="doom2_gif" src="imagenes/doom_door.png" alt="Puerta metálica" title="Doom II (1994)">
             </div>
             <article id="caja4_sec1">
@@ -113,7 +106,14 @@
         </section>
         <section class="color_fondo" id="sec2">
             <article id="caja1_sec2">
-                <a href="#infoDOOM3" id='infoDOOM3' onclick="doom3info()">Info de DOOM 3</a>
+              <h3>DOOM 3</h3>
+              <p>Este DOOM lanzado en 2004 intentó ser un reinicio de la saga, enfocándose más en la historia y haciéndolo un juego más terrorífico, cambiando totalmente la jugabilidad de sus antecesores donde lo principal era el frenetísmo y la acción.</p>
+              <p>Una vez más fue una innovación gráficamente, implementando luces y sombras dinámicas de alta resolución pero esto no fue suficiente para los jugadores. Al tener una nueva jugabilidad, no estuvieron conformes con los cambios. Los niveles ya no eran enormes, sino más pasilleros y cerrados, además de quitarle un gran número de enemigos en pantalla. No es un mal juego pero para los fanáticos de DOOM está considerado como el peor de toda la saga debido a que perdió su esencia.</p>
+              <p>Aunque tenía varias de sus características de siempre como el arsenal y demonios reconocibles de sus juegos anteriores, a pesar de que se cambiaron el diseño de algunos y se agregaron otros nuevos, algunos jugadores defendían este juego ya que la compañía se arriesgo con un gran cambio y aportó algo diferente a la serie. De hecho, así era la idea en un principio en hacer DOOM en 1993 pero no pudieron por la limitación tecnológica de aquella época.</p>
+              <p>Algo de lo que se puede críticar y, que todo el mundo está de acuerdo, es de su banda sonora la cuál no posee. Se quitó el característico heavy metal de siempre que sonaban durante los niveles mientras matabas demonios al ritmo del rock and roll, para dejar espacio a un ambiente sin sonido haciéndolo más perturbador, intentando provocar tensión y nerviosismo al jugador de que no bajara la guardia porque en cualquier momento podría aparecer un enemigo para intentar matarlo.</p>
+              <p>Tuvo una expansión llamada DOOM 3: Resurrection of Evil que fue lanzada en 2005 desarrollado por Nerve Software que incluía 12 niveles y 6 enemigos nuevos. También agregó 2 armas más: el arma de gravedad que permitía agarrar objetos y proyectiles enemigos, como bolas de fuego, para devolvérselos y el Artefacto que era un corazón demoníaco, afectaba al marine con adrenalina haciendo que el juego vaya en cámara lenta por unos segundos, permitiendo al jugador una respuesta más rápida al manejo de la situación.</p>
+              <p>Para terminar con la generación, en 2012 se lanzó una remasterización del DOOM 3 llamada DOOM 3 llamada DOOM 3: BFG Edition. Esta mejoraba los gráficos, los efectos de sonido y agregando pequeñas pero nuevas características como permitir usar la linterna sin la necesidad de andar desarmado, esto se criticó porque le quitaba el suspenso al dejar indefenso al jugador la cuál era la idea del juego en un principio con DOOM 3. También se agregó una nueva campaña llamada "The Lost Mission" y los juegos originales de DOOM I & II.</p>
+              <p>El pack trae ambos y permite al jugador elegir el DOOM 3 original o el remasterizado.</p>
             </article>
             <div id="caja2_sec2" class="carousel slide">
                 <div class="carousel-inner">
@@ -189,6 +189,6 @@
         </footer>
     </div>
     <script src="bootstrap.bundle.min.js" type="text/javascript"></script>
-    <script src="unidad11.js" type="text/javascript"></script>
+    <script src="sonido.js" type="text/javascript"></script>
 </body>
 </html>
