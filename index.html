@@ -27,6 +27,7 @@
                 </nav>
             </div>
         </header>
+        <main>
         <section class="color_fondo" id="sec1">
             <div id="caja1_sec1" class="color_fondo_imagen" >
                 <img id="doom1_img" src="imagenes/doomold.jpg" alt="Doom I (1993) de ID Software" title="Doom I (1993)">
@@ -93,11 +94,11 @@
                     <div class="col-xl-8 col-lg-8 texto_justificado" id="sec_new_r2col2">
                         <h3>¡Suscríbete!</h3>
                         <p>¡Recibe las últimas noticias de JuegoTeca a través de tu correo electrónico! Juegos de la actualidad, entrevistas, ofertas imperdibles en distintas plataformas y sorteos de videojuegos. Solo completa los siguientes datos para suscribirte a nuestra página.</p>
-                        <form>
+                        <p>¡También puedes dejarnos un comentario para mejorar nuestra página!</p>
+                        <form action="https://formspree.io/f/xeoqavyl" method="post">
                             <input class="form-control" type="text" placeholder="Nombre" minlength="3" maxlength="15" required>
-                            <input class="form-control" type="text" placeholder="Apellido" minlength="3" maxlength="30" required>
-                            <input class="form-control" type="number" placeholder="Edad" min="13" max="99" maxlength="2" required>
-                            <input class="form-control" type="email" placeholder="Correo" maxlength="100" required>
+                            <input class="form-control" type="email" name="email" placeholder="Correo" maxlength="100" required>
+                            <textarea class="form-control" type="textarea" name="message" placeholder="Deje su comentario aquí..." maxlength="255" required></textarea>
                             <input class="form-control boton_sus" type="submit" value="¡SUSCRIBIRME!">
                         </form>
                     </div>
@@ -180,6 +181,7 @@
                 <img id="doom2016_gif" src="imagenes/doom_2016.gif" title="DOOM GIF" alt="DoomSlayer matando un Imp con sus propias manos.">
             </div>
         </section>
+        </main>
         <footer class="color_fondo">
             <nav id="boton_bottom">
                 <a href="https://store.steampowered.com/bundle/15366/DOOM_Franchise_Bundle/" target="_blank" id="doom_link">DOOM</a>
