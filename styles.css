@@ -21,7 +21,7 @@ p {
     text-indent: 20px;
 }
 
-input{
+input, textarea{
     margin-bottom: 23px;
 }
 
