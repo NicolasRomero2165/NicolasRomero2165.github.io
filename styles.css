@@ -591,11 +591,7 @@ footer {
     }
 
     #nombre{
-    width: 90%;
-    height: auto;
-    margin: 5%;
-    font-size: 30px;
-    text-shadow: 2px 0px #ffffff, 0px 2px #ffffff, -2px 0px #ffffff, 0px -2px #ffffff;
+        display: none;
 }
 
 #boton1_top{
