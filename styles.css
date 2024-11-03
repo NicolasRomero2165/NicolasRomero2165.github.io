@@ -23,6 +23,7 @@ p {
 
 input, textarea{
     margin-bottom: 23px;
+    resize: none;
 }
 
 .color_fondo{
