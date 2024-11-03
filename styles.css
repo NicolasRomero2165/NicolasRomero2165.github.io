@@ -21,7 +21,7 @@ p {
     text-indent: 20px;
 }
 
-input{
+input, textarea{
     margin-bottom: 23px;
 }
 
@@ -161,7 +161,7 @@ header {
 }
 
 #sec1 {
-    height: 800px;
+    height: auto;
     margin-top: 10px;
     margin-bottom: 10px;
 }
