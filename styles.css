@@ -850,6 +850,27 @@ footer {
     top: auto;
 }
 
+.producto {
+    width: 100%;
+}
+
+.comentarios {
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+
+.caja-comentario {
+    margin-bottom: 0px;
+}
+
+.caja-comentario div {
+    margin-bottom: 5px;
+}
+
+.caja-comentario img{
+    display: none;
+}
+
 footer {
     height: 30px;
 }
