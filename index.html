@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="bootstrap.min.css" rel="StyleSheet">
+    <link href="bootstrap.css" rel="StyleSheet">
     <link href="styles.css" rel="StyleSheet">
     <link rel="icon" type="image/x-icon" href="imagenes/cacodemon.png">
     <title>JuegoTeca</title>
@@ -14,20 +14,38 @@
 <body>
     <div id="contenedor">
         <header id="cabecera">
-            <nav class="color_fondo" id="boton1_top"><a href="#contenedor">INICIO</a></nav>
-            <h1 id="nombre" display="block">JuegoTeca</h1>
-            <div class="color_fondo" id="menu">CONTENIDO
-                <nav id="boton2_top">
-                    <ul>
-                        <li id="doomold_boton"><a href="#sec1">DOOM I & II</a></li>
-                        <li id="sec_new_boton"><a href="#sec_new">DOOM 64</a></li>
-                        <li id="doom3_boton"><a href="#sec2">DOOM 3</a></li>
-                        <li id="doomnew_boton"><a href="#sec3">DOOM 2016 & Eternal</a></li>
-                        <li id="tienda_boton"><a href="#tienda">Tienda</a></li>
-                        <li id="tienda_boton"><a href="#comentarios">Comentarios</a></li>
+          <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" id="nombre" href="#contenedor">JuegoTeca</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown" data-bs-theme="dark">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#contenedor">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#tienda">Tienda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#comentarios">Comentarios</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Contenido
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#sec1">DOOM I & II</a></li>
+                      <li><a class="dropdown-item" href="#sec_new">DOOM 64</a></li>
+                      <li><a class="dropdown-item" href="#sec2">DOOM 3</a></li>
+                      <li><a class="dropdown-item" href="#sec3">DOOM 2016 & Eternal</a></li>
                     </ul>
-                </nav>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </nav>
         </header>
         <main>
         <section class="color_fondo" id="sec1">

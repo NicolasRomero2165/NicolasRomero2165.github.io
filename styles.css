@@ -51,25 +51,17 @@ header, section, footer {
 /* HEADER ------------------------------------------------------------------------------------------------------------------------------ */
 
 header {
-    background: radial-gradient(#242424 10%,#4e4c4c);
-    height: 100px;
     position: sticky;
     top: 0;
     border-radius: 0px;
     z-index: 1000;
+    height: 60px;
+    background-color: #4e4c4c;
 }
 
 #nombre{
-    width: 510px;
-    height: 90px;
-    margin: 5px 175px;
-    float: left;
-    text-align: center;
-    box-sizing: border-box;
-    font-size: 60px;
     color:#b95c06;
-    text-shadow: 4px 0px #ffffff, 0px 4px #ffffff, -4px 0px #ffffff, 0px -4px #ffffff;
-    transform: translate(0px, 0px) skew(-16deg, 0deg);
+    font-weight: bold;
 }
 
 #boton1_top{
