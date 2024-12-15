@@ -500,14 +500,6 @@ header{
     height: 50px;
 }
 
-#nombre{
-width: 200px;
-height: 30px;
-margin: 5px 20px;
-font-size: 30px;
-text-shadow: 2px 0px #ffffff, 0px 2px #ffffff, -2px 0px #ffffff, 0px -2px #ffffff;
-}
-
 #boton1_top{
     width: 160px;
     height: 40px;
@@ -691,10 +683,6 @@ footer {
         width: 100%;
         float: left;
     }
-
-    #nombre{
-        display: none;
-}
 
 #boton1_top{
     width: 90%;
