@@ -64,6 +64,10 @@ header {
     font-weight: bold;
 }
 
+.texto_naranja{
+    color: #b95c06;
+}
+
 #boton1_top{
     width: 160px;
     height: 90px;
@@ -97,33 +101,17 @@ header {
     border-radius: 15px 15px 0px 0px;
 }
 
-#doomold_boton:hover{
-    animation: bordes 800ms infinite linear;
-}
-
-#sec_new_boton:hover{
-    animation: bordes 800ms infinite linear;
-}
-
-#doom3_boton:hover{
-    animation: bordes 800ms infinite linear;
-}
-
-#doomnew_boton:hover{
-    animation: bordes 800ms infinite linear;
-}
-
-#tienda_boton:hover{
-    animation: bordes 800ms infinite linear;
+.ani_borde:hover{
+    animation: bordes 1500ms infinite linear;
 }
 
 @keyframes bordes {
     from {
-      border: 2px solid #5f0707;
+      background-color: #5f0707;
     }
   
     to {
-      border: 2px solid #f10505;
+      background-color: #f10505;
     }
   }
 
@@ -373,6 +361,7 @@ header {
         padding: 20px;
         background-color: #242424;
         margin-bottom: 10px;
+        text-align: center;
 }
 
 .producto {
@@ -380,7 +369,6 @@ header {
     margin-bottom: 10px;
 	background-color: #131313;
 	color: aliceblue;
-	text-align: center;
 	border: 1px solid #b95c06;
     height: auto;
     width: 240px;
@@ -459,18 +447,17 @@ header {
 
 /* PIE DE PÁGINA ------------------------------------------------------------------------------------------------------------------------------ */
 
-footer {
-    height: 50px;
-    clear: both;
-}
-
 #boton_bottom{
-    width: 700px;
-    margin: 16px 250px;
-    background-color: #070707;
-    float: left;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    padding: 10px;
+    background-color: #242424;
+    margin-bottom: 10px;
     text-align: center;
-    top: 0px;
+    background-color: #070707; 
+    clear: both;
 }
 
 #boton_bottom a{
