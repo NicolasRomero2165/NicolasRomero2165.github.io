@@ -4,16 +4,27 @@ puerta.addEventListener('animationstart', function(){
     sonido.play();
 }); */
 
-let formNombre = document.querySelector("#formNombre");
-let formCorreo = document.querySelector("#formCorreo");
-let formComentario = document.querySelector("#formComentario");
+/* Función del formulario */
+const formNombre = document.querySelector("#formNombre");
+const formCorreo = document.querySelector("#formCorreo");
+const formComentario = document.querySelector("#formComentario");
+const formBoton = document.querySelector("#formBoton");
 
-do { console.log("Por favor, complete todos los campos del formulario antes de enviar el mensaje.") } 
-while (nombre.length > 0 && correo.length > 0 && comentario.length > 0);
+formBoton.addEventListener("click", function() {
+    let nombre = formNombre.value;
+    let correo = formCorreo.value;
+    let comentario = formComentario.value;
+    if (nombre.length === 0 || correo.length === 0 || comentario.length === 0) {
+        alert("Por favor, complete todos los campos del formulario antes de enviar el mensaje.");
+        console.log("Por favor, complete todos los campos del formulario antes de enviar el mensaje."); }
+    else {
+        console.log("Correo enviado exitosamente.");
+    }})
 
-const PRODUCTO = document.querySelectorAll(".producto");
-let productosCant = PRODUCTO.length;
-console.log("Hay "+productosCant+" productos disponibles, de los cuáles son:");
+/* Función de la lista de la tienda */
+const productos = document.querySelectorAll(".producto > h5");
+const productosCant = productos.length;
+console.log(`Hay ${productosCant} productos disponibles, de los cuales son:`);
 for (let i = 0; i < productosCant; i++) {
-        console.log(document.querySelector("#producto"+i).textContent);
+        console.log((i+1)+". "+productos[i].textContent);
     }
