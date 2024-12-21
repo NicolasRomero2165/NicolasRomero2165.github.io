@@ -68,38 +68,6 @@ header {
     color: #b95c06;
 }
 
-#boton1_top{
-    width: 160px;
-    height: 90px;
-    margin: 5px;
-    float: left;
-    text-align: center;
-    box-sizing: border-box;
-    font-family:'Times New Roman', Times, serif;
-    padding: 31px 0px;
-    font-size: 25px;
-    border-radius: 15px;
-}
-
-#boton1_top a{
-    display: inline-block;
-    text-decoration: none;
-    color:#b95c06;
-}
-
-#menu{
-    width: 160px;
-    height: 90px;
-    padding: 31px 0px;
-    text-align: center;
-    box-sizing: border-box;
-    margin: 5px;
-    float: left;
-    font-family:'Times New Roman', Times, serif;
-    font-size: 25px;
-    z-index: 2;
-    border-radius: 15px 15px 0px 0px;
-}
 
 .ani_borde:hover{
     animation: bordes 1500ms infinite linear;
@@ -113,38 +81,6 @@ header {
     to {
       background-color: #f10505;
     }
-  }
-
-#boton2_top{
-    width: 160px;
-    height: 0px;
-    background-color: #131313;
-    margin-top: 21px;
-    font-size: 16px;
-    position: sticky;
-    cursor: pointer;    
-    overflow: hidden;
-}
-
-#menu:hover #boton2_top{
-    visibility: visible;
-    height: 184px;
-    transition: 0.5s;
-}
-
-#boton2_top ul {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-    box-sizing: border-box;    
-    text-align: center;    
-    line-height: 30px;
-}
-
-#boton2_top ul li a{
-    display: inline-block;
-    text-decoration: none;
-    color:#ffffff;
 }
 
 /* SECCION DOOM 2 ------------------------------------------------------------------------------------------------------------------------------*/
@@ -181,36 +117,13 @@ header {
     overflow: hidden;
     display: block;
     position: relative;
-    animation: puerta;
-    animation-duration: 2s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
     z-index: 1;
     top: 0%;
+    animation-duration: 5s;
 }
 
-@keyframes puerta{
-    from {
-        top: 0%;
-    }
-
-    to {
-        top: -100%;
-    }
-}
-
-#datos{
-    display:block;
-    font-size: 25px;
-    color:#f11818;
-    text-shadow: 2px 0px #050000, 0px 2px #050000, -2px 0px #050000, 0px -2px #050000;
-}
-
-#rechazo{
-    text-align: center;
-    font-size: 40px;
-    color:#f11818;
-    text-shadow: 2px 0px #050000, 0px 2px #050000, -2px 0px #050000, 0px -2px #050000;
+#doom2_gif:hover{
+    cursor: pointer;
 }
 
 #caja3_sec1{
@@ -309,6 +222,31 @@ header {
     color: #ffffff;
 }
 
+.boton_comp{
+    width: 70%;
+    background-color: #b95c06;
+    color: #ffffff;
+    float: left;
+    margin-right: 5px;
+}
+
+.boton_info{
+    width: 25%;
+    background-color: #065dff;
+    color: #ffffff;
+    float: right;
+    font-weight: bolder;
+}
+
+.boton_comp:hover{
+    background-color: #5f0707;
+}
+
+.boton_info:hover{
+    background-color: #ffffff;
+    color: #065dff;
+}
+
 .boton_sus:hover{
     background-color: #5f0707;
 }
@@ -396,6 +334,45 @@ header {
     text-shadow: none;
 }
 
+#descripcion{
+    width: 30%;
+    height: auto;
+    position: fixed;
+    left: 34%;
+    margin: 20px;
+    background-color: #131313;
+    border: solid 1px #b95c06;
+}
+
+#descripcion h3{
+    font-weight: bolder;
+}
+
+.infoProducto{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: #817e7e;
+    color: #070707;
+    margin-bottom: 5px;
+}
+
+.infoProducto div{
+    border: solid 1px #b95c06;
+}
+
+.boton_cerrar {
+    background-color: #f10505;
+    width: 20%;
+    font-weight: bolder;
+    color: #e7f1ff;
+    left: 40%;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.boton_cerrar:hover{
+    background-color: #5f0707;
+}
 /* COMENTARIOS ------------------------------------------------------------------------------------------------------------------------------ */
 
 .comentarios {
