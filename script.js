@@ -5,9 +5,7 @@ puerta.addEventListener('click', function(){
     const puertaSubir = [{transform: "translateY(0%)"}, {transform: "translateY(-100%)"}];
     const puertaTiempo = {duration: 2000, iterations: 1}
     this.animate(puertaSubir, puertaTiempo);
-    setTimeout(() => {
-        puerta.style.top = "-100%";
-    }, 2000);
+    setTimeout(() => { puerta.style.top = "-100%"; }, 2000);
     sonido.play();
 })
 
@@ -28,7 +26,7 @@ formBoton.addEventListener("click", function() {
         console.log("Correo enviado exitosamente.");
 }})
 
-/* Función de la lista de la tienda */
+/* Función de la lista de la tienda en consola */
 const productos = document.querySelectorAll(".producto > h5");
 const productosCant = productos.length;
 console.log(`Hay ${productosCant} productos disponibles, de los cuales son:`);
@@ -67,6 +65,45 @@ botonInfo4.addEventListener("click", function () {
     info.innerHTML = "<h3>MONITOR</h3> <section class='infoProducto'> <div>PRECIO</div><div>$ 184000</div> <div>MODELO</div><div>LED</div> <div>MARCA</div><div>LG</div> <div>PULGADAS</div><div>22</div> <div>VOLTAJE</div><div>220v</div> <div>RESOLUCIÓN</div><div>1920 px x 1080 px</div> <div>REFRESCO</div><div>75 Hz</div> <div>ASPECTO</div><div>16:9</div> </section> <button class='form-control boton_cerrar' onclick='cerrarVentana()'>X</button>"
     document.getElementById('descripcion').style.display = "block";
 })
+
+/* Lista de productos */
+const producto0 = {nombre: "Silla Gamer", precio: "$ "+248000, modelo: "Gamer Super Confort", marca: "Patagonia Home", color: "Negro", envios: "A todo el país"};
+const producto1 = {nombre: "Auriculares", precio: "$ "+94170*0.70, modelo: "G432", marca: "Logitech", color: "Negro", envios: "A todo el país"};
+const producto2 = {nombre: "Gabinete", precio: "$ "+132700, modelo: "g50", marca: "Sentey", color: "Negro", envios: "Capital Federal"};
+const producto3 = {nombre: "Monitor", precio: "$ "+184000, modelo: "LED", marca: "LG", color: "Negro", envios: "No"};
+const producto4 = {nombre: "Mouse", precio: "$ "+41499, modelo: "Lightspeed", marca: "Logitech G", color: "Negro", envios: "A todo el país"};
+const producto5 = {nombre: "Parlantes", precio: "$ "+17929, modelo: "SP-HF180", marca: "Genius", color: "Negro", envios: "A todo el país"};
+const producto6 = {nombre: "Placa de video", precio: "$ "+1181050, modelo: "GeForce RTX 4070", marca: "Asus", color: "Plateado", envios: "Capital Federal"};
+const producto7 = {nombre: "Memoria RAM", precio: "$ "+51800, modelo: "KF432C16BB/16", marca: "Kingston", color: "Gris", envios: "A todo el país"};
+const producto8 = {nombre: "Teclado", precio: "$ "+36990, modelo: "KG962", marca: "Marvo", color: "RGB", envios: "A todo el país"};
+const producto9 = {nombre: "CPU", precio: "$ "+446989, modelo: "Ryzen 7 5700X3D", marca: "AMD", color: "Plateado", envios: "Capital Federal"};
+const lista_Productos = [producto0, producto1, producto2, producto3, producto4, producto5, producto6, producto7, producto8, producto9]
+
+/* Función para mostrar la lista de productos */
+
+const lista = document.querySelector(".lista");
+
+function listaProductos() {
+    const titulos = ['NOMBRE', 'PRECIO', 'MODELO', 'MARCA', 'COLOR', 'ENVIOS']
+    for (let i = 0; i < titulos.length; i++) {
+        const div = document.createElement("div")
+        const h5 = document.createElement("h5")
+        h5.textContent = titulos[i]
+        div.appendChild(h5)
+        lista.appendChild(div)
+    }
+    for (let i = 0; i < lista_Productos.length; i++) {
+        let productoSelec = lista_Productos[i]
+        for (datos in productoSelec) {
+            const p = document.createElement("p")
+            p.textContent = productoSelec[datos]
+            lista.appendChild(p)
+        }
+    } 
+    listaBoton.style.display = "none";
+}
+
+/* Fetch de sucursales ficticios */
 
 fetch('https://jsonplaceholder.typicode.com/users/1')
       .then(response => response.json())
